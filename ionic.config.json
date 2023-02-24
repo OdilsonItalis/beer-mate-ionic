@@ -1,0 +1,7 @@
+{
+  "name": "Beer Mate App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,37 @@
+<ion-content>
+  <ng-container>
+    <ion-list class="product-list" lines="none">
+      <ion-item
+        *ngFor="let item of (list | async)"
+        [routerLink]="[item.id]"
+        class="product-item"
+      >
+        <ion-thumbnail slot="start" class="bottle-thumb">
+          <img
+            src="{{item.image_url}}"
+            class="bottle-thumb-img"
+            alt="Bottle Image"
+          />
+        </ion-thumbnail>
+        <ion-label class="product-details-wrapper">
+          <h4 class="product-title">{{item.name}}</h4>
+          <p class="product-desc">{{item.description}}</p>
+          <p class="tagline-text">{{item.tagline}}</p>
+          <div class="feedback-wrapper">
+            <p class="feedback-details">
+              <ion-icon name="thumbs-down-outline"></ion-icon>
+              12
+            </p>
+            <p class="feedback-details">
+              <ion-icon name="heart-outline"></ion-icon>
+              56
+            </p>
+            <p class="feedback-details">
+              <ion-icon name="share-social-outline"></ion-icon>
+            </p>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+</ion-content>

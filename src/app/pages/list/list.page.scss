@@ -1,0 +1,110 @@
+.item-inner {
+  border: none !important;
+}
+
+.product-item {
+  border: 1px solid var(--ion-color-tertiary-tint);
+  border-radius: 6px;
+  margin: 7px 0;
+  box-shadow: 0px 0px 4px 0px #7974ff;
+}
+
+.product-details-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.product-img {
+  width: 100px;
+  padding: 0 20px;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  white-space: normal;
+}
+
+.product-desc {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tagline-text {
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0;
+  margin-top: auto;
+  width: fit-content;
+  margin-left: auto;
+  white-space: normal;
+  text-align: right;
+  font-style: italic;
+  padding: 2px 10px 2px 20px;
+  background: linear-gradient(143deg, transparent 16%, var(--ion-color-tertiary-tint) 154%);
+  color: var(--ion-color-step-100);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: var(--ion-color-tertiary);
+}
+
+.bottle-thumb {
+  height: 180px;
+  margin-bottom: 0;
+  align-self: flex-start;
+  margin-top: 0;
+  margin: 15px 0;
+}
+
+.bottle-thumb-img {
+  object-fit: contain;
+}
+
+.product-list {
+  margin: 60px 0;
+  padding: 0 10px;
+  background-color: #f3f3f3;
+}
+
+.feedback-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.feedback-details {
+  display: flex;
+  align-items: center;
+  color: var(--ion-color-tertiary);
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.feedback-details ion-icon {
+  margin-right: 4px;
+}

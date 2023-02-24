@@ -1,0 +1,30 @@
+<ng-container *ngIf="(item | async) as beer">
+  <ion-content>
+    <div class="banner-section">
+      <img src="{{beer.image_url}}" alt="Beer image" class="beer-img" />
+      <div class="beer-desc-wrapper">
+        <h4 class="title">{{beer.name}}</h4>
+        <p class="tagline-text">{{beer.tagline}}</p>
+      </div>
+      <div class="feedback-btns-wrapper">
+        <ion-icon
+          name="thumbs-down-outline"
+          size="large"
+          class="feedback-btn"
+        ></ion-icon>
+        <ion-icon
+          name="heart-outline"
+          size="large"
+          class="feedback-btn"
+        ></ion-icon>
+      </div>
+    </div>
+    <!-- <ion-card>
+      {{beer.id}}<br>
+      {{beer.name}}<br>
+      {{beer.description}}<br>
+      {{beer.image_url}}<br>
+      {{beer.tagline}}
+    </ion-card> -->
+  </ion-content>
+</ng-container>
