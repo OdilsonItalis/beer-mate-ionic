@@ -1,6 +1,6 @@
 <ion-content>
   <ng-container>
-    <ion-list class="product-list" lines="none">
+    <ion-list class="product-list">
       <ion-item
         *ngFor="let item of (list | async)"
         [routerLink]="[item.id]"
