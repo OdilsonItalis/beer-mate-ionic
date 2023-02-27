@@ -13,6 +13,10 @@
 }
 
 .bottom-tab {
+  background-color: var(--ion-color-primary);
+}
+
+.bottom-tab {
   width: calc(100% - 30px);
   border-radius: 12px;
   margin: 0 15px;
@@ -22,7 +26,7 @@
 }
 
 .tab-button {
-  background-color: var(--ion-color-tertiary);
+  background-color: var(--ion-color-primary);
   color: #ffffff;
 }
 

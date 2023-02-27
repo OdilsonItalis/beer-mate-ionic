@@ -1,0 +1,19 @@
+<ng-container>
+  <ion-header class="header">
+    <ion-title> Beer Mate </ion-title>
+    <ion-icon
+      *ngIf="!darkMode"
+      name="moon-sharp"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+    <ion-icon
+      *ngIf="darkMode"
+      name="sunny"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+  </ion-header>
+
+  <ion-content> </ion-content>
+</ng-container>

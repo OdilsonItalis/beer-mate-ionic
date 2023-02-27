@@ -1,4 +1,20 @@
 <ion-content>
+  <ion-header class="header">
+    <ion-title> Beer Mate </ion-title>
+    <ion-icon
+      *ngIf="!darkMode"
+      name="moon-sharp"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+    <ion-icon
+      *ngIf="darkMode"
+      name="sunny"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+  </ion-header>
+
   <ng-container>
     <ion-list class="product-list">
       <ion-item
@@ -15,20 +31,20 @@
         </ion-thumbnail>
         <ion-label class="product-details-wrapper">
           <h4 class="product-title">{{item.name}}</h4>
-          <p class="product-desc">{{item.description}}</p>
-          <p class="tagline-text">{{item.tagline}}</p>
+          <ion-text class="product-desc">{{item.description}}</ion-text>
+          <ion-text class="tagline-text">{{item.tagline}}</ion-text>
           <div class="feedback-wrapper">
-            <p class="feedback-details">
+            <ion-text class="feedback-details">
               <ion-icon name="thumbs-down-outline"></ion-icon>
               12
-            </p>
-            <p class="feedback-details">
+            </ion-text>
+            <ion-text class="feedback-details">
               <ion-icon name="heart-outline"></ion-icon>
               56
-            </p>
-            <p class="feedback-details">
+            </ion-text>
+            <ion-text class="feedback-details">
               <ion-icon name="share-social-outline"></ion-icon>
-            </p>
+            </ion-text>
           </div>
         </ion-label>
       </ion-item>

@@ -9,6 +9,7 @@ import { Beer, DataService } from 'src/app/services/data.service';
   styleUrls: ['./detail.page.scss'],
 })
 export class DetailPage implements OnInit {
+  darkMode: boolean = false;
 
   public item: Observable<Beer> | null;
 
@@ -18,6 +19,17 @@ export class DetailPage implements OnInit {
   ) {
     // this.item = new Observable();
     this.item = null;
+  }
+
+  toggleDarkMode() {
+    const bodyClass = document.body.className;
+    if(bodyClass) {
+      document.body.classList.remove('dark');
+      this.darkMode = false;
+    } else {
+      document.body.classList.add('dark');
+      this.darkMode = true;
+    }
   }
 
   ngOnInit() {

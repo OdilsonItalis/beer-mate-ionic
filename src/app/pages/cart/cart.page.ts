@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  selector: 'app-cart',
+  templateUrl: './cart.page.html',
+  styleUrls: ['./cart.page.scss'],
 })
-export class AppComponent {
+export class CartPage {
   darkMode: boolean = false;
 
   constructor() {}

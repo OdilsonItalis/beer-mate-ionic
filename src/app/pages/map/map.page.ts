@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  selector: 'app-map',
+  templateUrl: './map.page.html',
+  styleUrls: ['./map.page.scss'],
 })
-export class AppComponent {
+export class MapPage {
   darkMode: boolean = false;
 
   constructor() {}

@@ -1,30 +1,50 @@
 <ng-container *ngIf="(item | async) as beer">
+  <ion-header class="header">
+    <ion-icon
+      name="chevron-back-outline"
+      class="back-btn"
+      [routerLink]="['']"
+    ></ion-icon>
+    <ion-title> {{beer.name}} </ion-title>
+    <ion-icon
+      *ngIf="!darkMode"
+      name="moon-sharp"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+    <ion-icon
+      *ngIf="darkMode"
+      name="sunny"
+      class="header-icon-btn"
+      (click)="toggleDarkMode()"
+    ></ion-icon>
+  </ion-header>
+
   <ion-content>
     <div class="banner-section">
       <img src="{{beer.image_url}}" alt="Beer image" class="beer-img" />
       <div class="beer-desc-wrapper">
-        <h4 class="title">{{beer.name}}</h4>
-        <p class="tagline-text">{{beer.tagline}}</p>
+        <ion-title class="title">{{beer.name}}</ion-title>
+        <ion-text class="tagline-text">{{beer.tagline}}</ion-text>
       </div>
       <div class="feedback-btns-wrapper">
         <ion-icon
           name="thumbs-down-outline"
-          size="large"
           class="feedback-btn"
         ></ion-icon>
         <ion-icon
           name="heart-outline"
-          size="large"
           class="feedback-btn"
         ></ion-icon>
       </div>
     </div>
-    <!-- <ion-card>
-      {{beer.id}}<br>
-      {{beer.name}}<br>
-      {{beer.description}}<br>
-      {{beer.image_url}}<br>
-      {{beer.tagline}}
-    </ion-card> -->
+    <div class="beer-contents-section">
+      <img
+        src="../../../assets/images/bottle.png"
+        alt="Bottle"
+        class="bottle-bg-img"
+      />
+      <ion-text class="beer-description">{{beer.description}}</ion-text>
+    </div>
   </ion-content>
 </ng-container>
